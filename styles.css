@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%; /*creates the lines at the bottom*/
+}
+
+.screen{
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px; /*20px top bottom, 5px left and right*/
+    font-size: 40px;
+}
+
+.calc-button{
+    background-color: #d8d9db;
+    color: black;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.6%; /*.5% to create space between the buttons*/
+}
+
+.calc-button:hover{
+    background-color: #e0d7d7;
+}
+
+.calc-button:active{
+    background-color: #bbcbeb;
+}
+
+.double{
+    flex-basis: 49.7%; /*double that single button flex basis on calc button which was 24.5%*/
+}
+
+.triple{
+    flex-basis: 74.8%;
+}
+
+.calc-button:last-child{ /*Could have made another class in calc button but i'll be using last-chlid(as it's in flexbox)Making the button on right hand column orange*/
+    background-color: #9e2266;
+    color: white;
+}
+
+.calc-button:last-child:hover{
+    background: #d77edf;
+}
